@@ -1,0 +1,120 @@
+:root{
+
+  /* Primary */
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --pale-blue: hsl(245, 75%, 70%);
+  --white-background: white;
+  --white-text: white;
+
+  /* Neutral */
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+
+  /* Font */
+  --Family-Red-Hat-Display: 'Red Hat Display', sans-serif;
+  --Font-size : 16px; /* (paragraph) */
+
+  --Weight-1: 900;
+  --Weight-2: 700;
+  --Weight-3: 500;
+}
+
+body{
+  background: var(--Pale-blue) url("images/pattern-background-desktop.svg") no-repeat;
+  background-size: contain;
+  overflow: hidden;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  font-family: var(--Family-Red-Hat-Display);
+  font-size: var(--Font-size);
+  font-weight: var(--Weight-3);
+
+  width: 450px;
+  overflow: hidden;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  background-color: var(--white-background);
+
+
+}
+
+
+.card-title{
+  font-weight: var(--Weight-1);
+  margin: 40px 0px 20px 0px;
+}
+
+.card-info{
+  text-align: center;
+  width: 300px ;
+  margin: 0px 0px 22px 0px;
+  color: var(--Desaturated-blue);
+}
+
+.card-info_plan{
+  display: inline-flex;
+  align-items: center;
+
+  background-color: var(--Very-pale-blue);
+
+  border-radius: 10px;
+  padding: 20px;
+
+}
+.card-info_plan img{
+  margin-right: 20px;
+}
+
+.card-info_plan-info span{
+  font-weight: var(--Weight-2);
+}
+.card-info_plan-info p{
+  margin: 0px;
+  color: var(--Desaturated-blue);
+}
+.card-info_plan-change:hover{
+  color: var(--pale-blue);
+}
+.card-info_plan-change{
+  margin-left: 100px;
+
+}
+
+.card-btn:hover{
+  cursor: pointer;
+  background-color: var(--pale-blue);
+}
+.card-btn{
+  border: none;
+  padding: 15px 115px;
+  border-radius: 10px;
+  background-color: var(--Bright-blue);
+  color: var(--white-text);
+  font-weight: var(--Weight-2);
+
+  margin: 25px 0px;
+}
+.card-cancelOrder:hover{
+  color: var(--Dark-blue);
+
+}
+.card-cancelOrder{
+  text-decoration: none;
+  font-weight: var(--Weight-2);
+  margin-bottom: 45px;
+  color: var(--Desaturated-blue);
+}

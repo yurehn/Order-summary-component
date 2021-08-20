@@ -2,36 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="This is challenge Order-summary-component of FrontendMentor">
+  </head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <main>
+    <div class="card">
+      <img class="card-ImgHero" src="images/illustration-hero.svg" alt="Person listening to music">
+      <h2 class="card-title">Order Summary</h2>
+      <p class="card-info">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
 
-  Order Summary
+      <div class="card-info_plan">
+        <img src="images/icon-music.svg" alt="Icon Music">
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+        <div class="card-info_plan-info">
+          <span>Annual Plan</span>
+          <p>$59.99/year</p>
+        </div>
+        <a class="card-info_plan-change" href="##">Change</a>
+      </div>
 
-  Annual Plan
-  $59.99/year
+      <Button class="card-btn">Proceed to Payment</Button>
+      <a class="card-cancelOrder" href="##">Cancel Order</a>
+    </div>
+  </main>
 
-  Change
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
