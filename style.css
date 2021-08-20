@@ -60,7 +60,7 @@ body{
 
 .card-info{
   text-align: center;
-  width: 300px ;
+  width: 300px;
   margin: 0px 0px 22px 0px;
   color: var(--Desaturated-blue);
 }
@@ -73,8 +73,8 @@ body{
 
   border-radius: 10px;
   padding: 20px;
-
 }
+
 .card-info_plan img{
   margin-right: 20px;
 }
@@ -91,7 +91,6 @@ body{
 }
 .card-info_plan-change{
   margin-left: 100px;
-
 }
 
 .card-btn:hover{
@@ -117,4 +116,28 @@ body{
   font-weight: var(--Weight-2);
   margin-bottom: 45px;
   color: var(--Desaturated-blue);
+}
+
+@media screen and (max-width: 500px){
+  .card{
+    width: 365px;
+    transition: 0.3s;
+  }
+  .card-info{
+    width: 270px;
+    transition: 0.3s;
+  }
+  .card-info_plan{
+    padding: 15px;
+    transition: 0.3s;
+  }
+  .card-info_plan-change{
+    margin-left: 50px;
+    transition: 0.3s;
+  }
+  .card-btn{
+    padding: 18px 85px;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
 }
