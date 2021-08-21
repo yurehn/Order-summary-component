@@ -6,6 +6,7 @@
   --pale-blue: hsl(245, 75%, 70%);
   --white-background: white;
   --white-text: white;
+  --box-shadow: rgba(0, 0, 0, 0.3);
 
   /* Neutral */
   --Very-pale-blue: hsl(225, 100%, 98%);
@@ -105,7 +106,9 @@ body{
   color: var(--white-text);
   font-weight: var(--Weight-2);
 
-  margin: 25px 0px;
+  margin: 50px 0px;
+  box-shadow: 0px 25px 45px 0px var(--box-shadow);
+
 }
 .card-cancelOrder:hover{
   color: var(--Dark-blue);
@@ -114,7 +117,7 @@ body{
 .card-cancelOrder{
   text-decoration: none;
   font-weight: var(--Weight-2);
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   color: var(--Desaturated-blue);
 }
 
